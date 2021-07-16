@@ -9,6 +9,7 @@ public class bankAccountDaoImpl implements bankAccountDao{
 
 
     public bankAccountDaoImpl() {
+        Bank= new ArrayList<bankAccount>();
         bankAccount account1= new bankAccount(1, "account1");
         bankAccount account2= new bankAccount(2, "account2");
         Bank.add(account1);
