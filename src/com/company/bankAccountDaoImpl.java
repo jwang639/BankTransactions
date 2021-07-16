@@ -64,4 +64,17 @@ public class bankAccountDaoImpl implements bankAccountDao{
     public void accountBalance(int AccountNumber) {
         System.out.println("Your account's balance: "+ Bank.get(AccountNumber).getBalance());
     }
+
+    @Override
+    public void displayAll() {
+        for(bankAccount bankAccount: Bank){
+            System.out.println("AccountName: "+ bankAccount.getCustomerName()+ ", AccountNumber: "+ bankAccount.getAccountNumber());
+        }
+    }
+
+    @Override
+    public void displayOne(int AccountNumber) {
+        System.out.println("AccountName: "+ Bank.get(AccountNumber).getCustomerName()+ ", " +
+                "AccountNumber: "+ Bank.get(AccountNumber).getAccountNumber());
+    }
 }

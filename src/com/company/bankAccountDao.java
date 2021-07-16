@@ -12,4 +12,6 @@ public interface bankAccountDao {
     public List<bankAccount> getAllAccounts();
     public bankAccount getAccount(int AccountNumber);
     public void accountBalance(int AccountNumber);
+    public void displayAll();
+    public void displayOne(int AccountNumber);
 }

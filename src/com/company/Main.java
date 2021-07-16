@@ -17,5 +17,8 @@ public class Main {
         }
         BOA.getAccount(0).getBalance();
         BOA.getAccount(0).deposit(1);
+        BOA.updateEmail(BOA.getAccount(0), "1234#gmail.com");
+        BOA.displayAll();
+        BOA.displayOne(0);
     }
 }

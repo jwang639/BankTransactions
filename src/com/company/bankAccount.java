@@ -64,12 +64,4 @@ public class bankAccount {
         return PhoneNumber;
     }
 
-    public void customerInfo(){
-        System.out.println("Customer name: "+ this.CustomerName);
-        System.out.println("Account Number: "+ this.AccountNumber);
-        System.out.println("Balance: "+ this.Balance);
-        System.out.println("Email address: "+ this.Email);
-        System.out.println("Phone number: "+ this.PhoneNumber);
-    }
-
 }
