@@ -15,6 +15,17 @@ public class mysql_DAO implements bankAccountDao{
     final String PASS = "testadmin";
     final String QUERY= "SELECT AccountNumber, CustomerName, PhoneNumber FROM BankTransaction";
     Connection conn= null;
+    public void ConnectToDataBase(){
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            System.out.println("Connecting to database...");
+            conn= DriverManager.getConnection(DB_URL, USER, PASS);
+            System.out.println("Connected to database");
+        }
+        catch (SQLException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
+    }
 
     public void createTable(){
         try{

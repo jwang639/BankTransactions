@@ -29,7 +29,8 @@ public class Main {
          bankAccount Jiahao= new bankAccount(1, "Jiahao");
          //mysql_dao.createTable();
          //mysql_dao.addAccount();
-        mysql_dao.displayAll();
 
+         mysql_dao.displayAll();
+         //mysql_dao.ConnectToDataBase();
     }
 }
