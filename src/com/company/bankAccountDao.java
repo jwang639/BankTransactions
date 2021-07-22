@@ -3,7 +3,7 @@ package com.company;
 import java.util.List;
 
 public interface bankAccountDao {
-    public void addAccount(bankAccount bankAccount);
+    public void addAccount();
     public void updateEmail(bankAccount bankAccount, String Email);
     public void updateName(bankAccount bankAccount, String Name);
     public void updatePhone(bankAccount bankAccount, int Phone);

@@ -17,8 +17,8 @@ public class bankAccountDaoImpl implements bankAccountDao{
     }
 
     @Override
-    public void addAccount(bankAccount bankAccount) {
-        this.Bank.add(bankAccount);
+    public void addAccount() {
+
     }
 
     @Override
