@@ -6,3 +6,4 @@ Converted to DAO version
 **********************
 JULY 22,2021
 Added MySql DAO
+Converted to Maven project
